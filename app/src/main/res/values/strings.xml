@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="login">Already have an account? Login here </string>
+    <string name="login"> Login here </string>
+    <string name="ask">Already have an account?</string>
 </resources>

@@ -35,28 +35,24 @@ public class MainActivity extends AppCompatActivity {
                         String email = memail.getText().toString().trim();
                         String password = mpassword.getText().toString().trim();
 
-                        if(TextUtils.isEmpty(fullname)){
+                        if(TextUtils.isEmpty(fullname)) {
                             mname.setError("Full Name is Required!");
                             return;
                         }
-                        if(TextUtils.isEmpty(email)){
+                        if(TextUtils.isEmpty(email)) {
                             memail.setError("Email is required!");
                             return;
                         }
-                        if(TextUtils.isEmpty(password)){
+                        if(TextUtils.isEmpty(password)) {
                             mpassword.setError("Password is required!");
                             return;
                         }
-                        if(password.length() < 6){
+                        if(password.length() < 6) {
                             mpassword.setError("Password must be >= 6Characters");
                             return;
                         }
                         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                         startActivity(intent);
-
-
-
-
 
 
                     }
@@ -71,16 +67,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
-
-
-
-
-
-
-
-
-
-
-
     }
+
 }
