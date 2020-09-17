@@ -11,58 +11,84 @@
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_marginTop="400dp"
-        android:background="@drawable/u"/>
+        android:background="@drawable/u"
+        android:contentDescription="TODO" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <ImageView
             android:layout_width="150dp"
             android:layout_height="130dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/raketa"/>
 
         <EditText
-            android:id="@+id/name"
+            android:id="@+id/etName"
+            android:layout_marginTop="0dp"
             style="@style/Registration"
-            android:drawableLeft="@drawable/ic_person_black_24dp"
-            android:hint="Full name"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:hint="@string/full_name"
             android:inputType="textPersonName"/>
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/etEmail"
             style="@style/Registration"
-            android:drawableLeft="@drawable/ic_email_black_24dp"
-            android:hint="Email"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"/>
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/etPhoneNumber"
             style="@style/Registration"
-            android:drawableLeft="@drawable/ic_star_black_24dp"
-            android:hint="Password"/>
+            android:drawableStart="@drawable/ic_phone_in_talk_black_24dp"
+            android:hint="@string/phoneNumber"
+            android:inputType="textEmailAddress"
+            tools:ignore="TextFields" />
 
-        <CheckBox
-            android:id="@+id/check_box"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/Registration"
+            android:drawableStart="@drawable/ic_star_black_24dp"
+            android:hint="@string/password"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:text="Remember me"
-            android:textColor="@color/white"/>
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:text="@string/male"
+                android:textSize="17sp"/>
+
+            <RadioButton
+                android:id="@+id/radFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="@string/female"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
 
         <Button
-            android:id="@+id/register"
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:layout_marginLeft="120dp"
             android:layout_marginRight="120dp"
-            android:text="Register"
+            android:text="@string/register"
             android:background="@drawable/radius"/>
 
         <LinearLayout
@@ -73,19 +99,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="100dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="80dp"
                 android:text="@string/ask"/>
 
             <Button
-                android:id="@+id/login"
+                android:id="@+id/btnLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="-5dp"
                 android:text="@string/login"
-                android:padding="-50dp"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textColor="@color/end2"
                 android:background="@android:color/transparent"/>
         </LinearLayout>
